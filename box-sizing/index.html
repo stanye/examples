@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      border:10px solid black;
+    }
+    .box1 {
+      float: left;
+      background: green;
+      box-sizing: content-box;
+    }
+    .box2 {
+      background: red;
+      box-sizing: border-box;
+    }
+    .parent {
+      overflow: auto;
+    }
+
+    .black {color: black;}
+    .red {color: red;}
+  </style>
+  <div class="box box1">三个字</div>
+  <div class="parent">
+      <div class="box box2">两个字</div>
+  </div>
+  <div class="red black">hello world</div>
+</body>
+</html>
